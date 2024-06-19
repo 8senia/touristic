@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристический сайт</title>
+    <link rel="stylesheet" href="styyle.css">
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+  <button type="button"  id="callback">Подобрать тур</button>
+      <div id="feedbackPopup" style="display: none;">
+    <h4>Оставьте ваши контакты и мы подберём идеальный тур</h4>
+    <form id="feedbackForm">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label >Ваш номер телефона</label>
+        <input required><br><br>
+       
+        <button type="submit" class="simplemodal-close" >Отправить</button>
+    </form>
+</div>
+<div id="overlay"></div>
+       <ul class="site-navigation">
+        <li class="site-navigation-item">
+         <button type="button" class="btn1">О регионе</button>
+        </li>
+       <button type="button" class="btn2">Что посмотреть</button>
+        </li>
+        <li class="site-navigation-item">
+         <button type="button" class="btn3">Туры</button>
+        </li>
+      </ul>
+        </nav>
+    </header>
+      <div class="slider-container">
+    <div class="slider">
+     <img src="https://sun9-52.userapi.com/impg/kVvMg9AbfUNRWmNEWiF0njoxHIwdI5hOvARWow/IqH_IZCKPJM.jpg?size=1440x708&quality=95&sign=4d5a97cac53cc47f05a882563a3cbff7&type=album" alt="Степь">
+     <img src="https://sun9-72.userapi.com/impg/qcUoHOLYmF8ckRn7eq4VylIOC7uoDLzdoJN_PQ/0hSjrNoouJw.jpg?size=1440x709&quality=95&sign=3f429228bf8111cb7a7b5508a0c2b1d9&type=album" alt="набережная">
+     <img src="https://sun9-76.userapi.com/impg/0EueqCVfiqBZhtmGYApk_hFd-I-q8A_pRPa52w/ukqkeaKmT0g.jpg?size=1440x709&quality=95&sign=0cd881d9dff9122a83e3accdf3321c6f&type=album" alt="Маяк">
+    </div>
+    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+  </div>
+       
+     <main class="main-content"> 
+        <div id="box1" class="box1"> 
+            <h2 ><img src="img/стрелка.svg" alt="иконка стрелки"> О регионе </h2> 
+           
+      <div class="grid">
+    
+    <div><img class="fact-article-img" src="https://sun9-24.userapi.com/impg/pkCcfPARgyGlBlViA6M_MWx4nG9k4BQTXrRNYQ/Z69zU0g2N1E.jpg?size=484x322&quality=95&sign=2ec7aa8f509e36e73cd32db1e513d7b4&type=album" width="460" height="300" alt="Казаки"></div>
+    <div><img class="fact-article-img" src="https://sun9-18.userapi.com/impg/bjNFKD5LEjnL-FZzuJPvZfdeifgC3pV36502VA/J_W9aMEosf0.jpg?size=483x323&quality=95&sign=5797745d007c72806297578854da0071&type=album" width="460" height="300" alt="Рыба"></div>
+    <div><p>На Дону сохранились древние казачьи станицы: Старочеркасская, Романовская, Раздорская, Мелиховская, Вёшенская, Каргинская, Еланская, Елизаветинская — и хутора: Кружилинский, Пухляковский.Здесь принимают в казаки, угощают местными блюдами. Здесь же можно поучаствовать в шермициях или других праздниках, услышать особый говор и песни.</p></div>
+    <div><p>В Ростовской области Дон-батюшка протекает через 14 городов и районов, в каждом из которых донскую уху готовят по своему уникальному рецепту. Несмотря на то, что в разных районах уху готовят по-своему, но неизменно она получается ароматная, сытная и очень вкусная. Каждый год в Ростовской области проходит гастрономический фестиваль «Донская уха», на котором местные жители щедро угощают гостей ухой, самым главным блюдом донской кухни.</p></div>
+    <div><img class="fact-article-img" src="https://sun9-80.userapi.com/impg/D0RE9uPbPfW9e5uG-OMeZr8JSriY3VDCGLxtNQ/1MvyacRKfAQ.jpg?size=483x322&quality=95&sign=44f3f292812488cfed16d5bf99f75f23&type=album" width="460" height="300" alt="Берег"></div>
+    <div class=ge>Элемент 6</div>
+    <div><p>Азовское побережье всегда было излюбленным курортом для огромного числа людей, наиболее доступной зоной для полноценного семейного отдыха. Холмистый, изрезанный реками и балками ландшафт севера области постепенно к югу переходит в плоскую равнину, которая плавно скрывается в волнах необыкновенного Азовского моря. Мелкое, теплое, небольшой глубины, богатое своим биологическим содержанием, Азовское море манит своей неповторимой красотой, повсюду чувствуется его неодолимое обаяние и огромная притягательная сила.</p></div>
+  </div>   
+        </div>
+    </main> 
+   
+<section class="article-gallery">
+  <h2 class="text">Что посмотреть</h2>
+<div id="box2" class="box2">
+  <div class="image">
+     <div id="img1"> <img style="margin-left:20px;"src="https://sun9-77.userapi.com/impg/YQbZApEgp6tHgRctdvqc7Rg14mqwm5eiJvw0fg/_RbKEKG3woY.jpg?size=273x350&quality=95&sign=b3d88a10dd4550b16c1694afda6939bb&type=album" alt="Парк Лога">
+ <div id="imgPopup1" style="display: none;">
+   <form id="imgForm1">
+<img src="https://sun9-3.userapi.com/impg/EfvK9ttA0I4oi0xPChtASUHA7WCBNCssNtlpSg/e9FnM2rUxs8.jpg?size=639x551&quality=95&sign=738ca58cb0fab178bfcfac25e6902a54&type=album" alt="о парке ">
+<span class="close">&times;</span>
+</form>
+</div>
+<div id="overlay"></div>
+          
+  <div id="img2"> <img style="margin-left:20px;"src="https://sun9-14.userapi.com/impg/dBhEAQGYMlbcZVzvlQReng78kGqDN6MJuEFQPg/OqQjQFD71IQ.jpg?size=273x350&quality=95&sign=a07eb9c7d6ef264b4cd7b31b111d412e&type=album" alt="зоопарк">
+ <div id="imgPopup2" style="display: none;">
+   <form id="imgForm2">
+<img src="https://sun2-21.userapi.com/impg/7ZoBPVBYE0oLbnaNqQ9it5Y1bcmIfg4OmrjyCw/ug0Zm2adtm4.jpg?size=639x550&quality=95&sign=eb8ec5c43bd79a6e7a3894bc948192bf&type=album" alt=" о зоопарке">
+<span class="close">&times;</span>
+</form>
+</div>
+<div id="overlay"></div>
+
+<div id="img3"> <img style="margin-left:20px;"src="https://sun9-7.userapi.com/impg/Ji7RAWocnV3Oe8l2QUL54pEuYpYNKRlBfV0g5Q/hVuzceeHoFA.jpg?size=273x350&quality=95&sign=b1aa09ee4232d5b73e558f75f837c403&type=album" alt="атаманский дворец">
+ <div id="imgPopup3" style="display: none;">
+   <form id="imgForm3">
+<img src="https://sun2-17.userapi.com/impg/WNO8Jm7kqiuYDH-639Er9QxfS-32WYtKfv8JFA/LwYYucGv-KQ.jpg?size=639x550&quality=95&sign=d71ce07ed5bbc16688fe30c3b3871f10&type=album" alt="о атаманском дворце">
+<span class="close">&times;</span>
+</form>
+</div>
+<div id="overlay"></div>
+
+ <div id="img4"> <img style="margin-left:20px;"src="https://sun9-23.userapi.com/impg/TQFlaS4_nv9sqv_QGu6ZcV78ajwT80qv7OoIqw/SSWTXlq2riA.jpg?size=273x350&quality=95&sign=000b61013439a6e4035dfc1efa83a4b5&type=album" alt="этно-хутор">
+ <div id="imgPopup4" style="display: none;">
+   <form id="imgForm4">
+<img src="https://sun9-4.userapi.com/impg/MU1KGwaPEiaGR6sjrDzuhOPKOXgLQTaZD8NzGQ/5MGK6Zr2xIY.jpg?size=639x550&quality=95&sign=e6376f5c37225a01ad0fab95d1a9c2cc&type=album" alt="о этно-хуторе">
+<span class="close">&times;</span>
+</form>
+</div>
+<div id="overlay"></div>           
+   </div>
+   </div>
+</section>
+                     
+ <section class="article-tour">           
+   <h2 class="last-name"> <img src="img/маршрут.svg" alt="иконка маршрута">Туры </h2>
+   <div id="box3" class="box3">                     
+  <div class="grid-tour">
+    
+    <div> <img style="object-fit: cover;" src="https://sun9-28.userapi.com/impg/3gnPIeplvDi7UAuMfa00dLdxMk61dobn4CwtFA/wEw56y9UEUc.jpg?size=273x350&quality=95&sign=1314bc68ac735c833d3d832ef8a0e8fe&type=album" alt="пешеходная"> </div>
+    <div><img style="object-fit: cover;" src="https://sun9-13.userapi.com/impg/FBAuOAgmq_7vuiHQtkNMxuz9fu8w3WpXdvvTzQ/eJd82nc0M_0.jpg?size=273x350&quality=95&sign=cac8d5be3384647761922abc2ea41848&type=album" alt="станица вешенская"> </div>
+    <div><img style="object-fit: cover;" src="https://sun9-4.userapi.com/impg/QqgfW4hfhhEQCiQqBlETos5XX59fGgpGa92MOA/uLJjlQ4Rqpc.jpg?size=273x350&quality=95&sign=b54e2062aabc13678a9c7a01bf8f655f&type=album" alt="стеклодувня"> </div>
+    <div><img style="object-fit: cover;" src="https://sun9-70.userapi.com/impg/QhrUS9oZ1YLVeZ5U8Vz8RPAXjozrtcpad2_2SQ/mpfk7iS5iLE.jpg?size=273x350&quality=95&sign=92d255b1397b2d5eba03da5fdf3b7447&type=album" alt="мустанги">    </div>
+    <div class="about"> <p class="name" >Пешеходная экскурсия «Тайны и призраки Ростова»</p> 
+    <p class="time" >Продолжительность: 2,5 - 3 часа</p> 
+    <p class="prise">990 ₽</p></div>
+    <div class="about"> <p class="name" >"СТАНИЦА ВЁШЕНСКАЯ. ПЕРВОМАЙСКАЯ"</p> 
+    <p class="time" >Продолжительность: 3 дня / 2 ночи</p> 
+    <p class="prise">10 790 ₽</p></div>
+    <div class="about"> <p class="name" >Экскурсия в стеклодувную мастерскую</p> 
+    <p class="time" >Продолжительность: 1,5 - 2 часа</p> 
+    <p class="prise">1 490 ₽</p></div>
+    <div class="about"> <p class="name" >Мустанги ростовского заповедника </p> 
+    <p class="time" >Продолжительность: 14 часов</p> 
+    <p class="prise">8 990 ₽</p></div> 
+  </div>
+         </div>
+   </section>
+      
+        <footer class="footer">
+     <div class="grid-footer">
+    <div><h3>КОНТАКТЫ</h3></div>
+    <div><ul class="site-footer">
+        <li class="site-footer-item">
+        <img src="img/телефон.png" alt="иконка телефона">
+          <a href="tel:+79991112233">+7(986) 354-79-21</a>
+        
+        </li>
+        <li class="site-footer-item">
+          <img src="img/почта.png" alt="иконка письма">
+         gorodnadony@gmail.com
+        </li>
+        <li class="site-footer-item">
+          <img src="img/локация.png" alt="иконка локации">
+         г.Ростов-на-Дону, пл.Гагарина,1
+        </li>
+      </ul></div>
+    
+    <div class="massage"> <img src="img/вк.png" alt="иконка вконтакте">
+          <img src="img/тг.png" alt="иконка телеграма"></div>
+   </footer>
+   <script src="scriipts.js"> </script>
+</body>
+</html>
+ 
+ 
